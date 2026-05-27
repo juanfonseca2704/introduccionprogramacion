@@ -1,3 +1,4 @@
+//mts,km,ml
 let clase,medida;
 clase = parseInt(prompt("Ingrese en que unidad de medida desea medir METROS = 1/ KILOMETROS = 2/ MILLAS = 3"))
 medida = parseInt(prompt("ingrese la medida que desea conocer"))

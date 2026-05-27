@@ -1,3 +1,4 @@
+//deportes
 let menu,persona=400,aje=0,atl=0,fut=0,gim=0,nat=0;
 do{
 menu=parseInt(prompt('Selecione el deporte que practica\n1.Ajedrez\n2.Atletismo\n3.Futbol\n4.Gimnasia\n5.Natacion\n6.salir'));

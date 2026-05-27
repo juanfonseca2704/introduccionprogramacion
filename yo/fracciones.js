@@ -1,3 +1,4 @@
+//fraciones
 let  n,x,i=2,cont=1;
     x=parseInt(prompt("Ingrese el número que será X: "));
         while (isNaN(x) || x === "") {

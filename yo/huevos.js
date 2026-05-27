@@ -1,3 +1,4 @@
+//huevos
 let A,AA,AAA,cant1,cant2,cant3,total,precio1,desc,preciot;
 let frec, dia;
 const fecha=["lunes-viernes","sabado","domingo"];

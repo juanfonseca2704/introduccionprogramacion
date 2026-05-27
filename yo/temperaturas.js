@@ -1,3 +1,4 @@
+//temperatura
 let menu=0,temperatura=0;
 let menor0=[]
 let igual0=[]

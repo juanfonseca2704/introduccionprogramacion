@@ -1,3 +1,4 @@
+//notas
 let nota1,nota2;
 nota1 = prompt("ingrese la nota practica")
 nota2 = prompt("ingrese la nota teórica")

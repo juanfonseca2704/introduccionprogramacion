@@ -1,3 +1,4 @@
+//pares impares & 0
 let numeros = [];
 let n;
 let pares = 0;

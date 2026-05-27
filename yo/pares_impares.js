@@ -1,3 +1,4 @@
+//pares_impares
 let num, par=0, impar;
 do{
     num=parseInt(prompt("Ingrese solo números pares: "));

@@ -1,3 +1,4 @@
+//horas
 let hr,min,seg;
 hr = parseInt(prompt("ingrese aqui horas"));
 min = parseInt(prompt("ingrese aqui minutos"));

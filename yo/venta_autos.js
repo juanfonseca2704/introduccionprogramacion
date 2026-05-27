@@ -1,3 +1,4 @@
+//venta autos
 let venta,cant,comi;
 venta = prompt("Ingrese el valor de ventas, en millones")
 cant = prompt("Ingrese el valor de autos vendidos")

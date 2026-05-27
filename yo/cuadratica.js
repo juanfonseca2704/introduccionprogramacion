@@ -1,3 +1,4 @@
+//cuadraticas
 let a,b,c,d,x,x1,x2;
 a = Number(prompt("ingrese un número que será A"));
 b = Number(prompt("ingrese un número que será B"));

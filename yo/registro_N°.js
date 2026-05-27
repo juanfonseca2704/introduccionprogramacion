@@ -1,3 +1,4 @@
+//reistro N°
 let numer=[],n,i,turn=1,result,add,suma=0;
 i=parseInt(prompt("Ingrese la cantidad de numeros que desea registrar"));
 do{

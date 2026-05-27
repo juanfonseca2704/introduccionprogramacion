@@ -1,3 +1,4 @@
+//clave
 let intentos=3;
 let contrasena="hola1234";
 let ingreso;

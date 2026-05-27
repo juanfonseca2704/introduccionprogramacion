@@ -1,3 +1,4 @@
+//separador
 alert("recargando, oprima aceptar");
 let num,uni,dec,cent,unimil,decmil,centmil;
 num = prompt("ingrese un número de 6 cifras: ");

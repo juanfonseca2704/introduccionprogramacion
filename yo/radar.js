@@ -1,3 +1,4 @@
+//radar
 let cifra,c1,c2,c3,c4,existe;
 let tipo=["dirigible","avion militar","avion civil de carga","avion civil de pasajeros","aeronave sin permiso","aeronave de supertranzporte","aeronave enemiga","avion mixto","helicoptero","globo aerostatico"]
 let lugar=["norte","norte","sur","sur","oriente","oriente","occidente","occidente","desconocido","desconocido"]
