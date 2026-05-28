@@ -1,0 +1,32 @@
+body{
+    background-color: #fdfd96;
+}
+p{
+    color:chocolate;
+}
+.style-p{
+    color:darkorange;
+}
+.titulo-secundario{
+    color:green;
+    text-decoration:underline;
+}
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: crimson;
+}
+#parrafo-unico{
+    color: lime;
+}
+.caja-modelo{
+    color: blanchedalmond;
+    width: 100%;
+    background-color: palevioletred;
+    border: 5px solid black;
+    padding: 20px;
+    margin: 4px 10px 40px 0px;
+    border-radius: 20px;
+}
+*{
+    font-size: 1rem;
+}

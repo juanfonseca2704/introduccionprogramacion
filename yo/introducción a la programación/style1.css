@@ -1,0 +1,31 @@
+body{
+    background-color: #000;
+}
+#sc1{
+    border: 10px solid #0f0200;
+    padding: 30 px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 20;
+    font-style: normal;
+    color: #DBA184;
+    font-size: 50px;
+}
+#sc2{
+    border-radius: 20px;
+    background-image: url(fondo5.gif);
+    border: 10px solid #A84C43;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h2{
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #A84C43;
+    font-size: 40px;
+}
+p{
+    color: #FFD0CC;
+    font-size: 30px;
+}
