@@ -1,0 +1,64 @@
+body{
+    background-color: #add8e6;
+    transition: all 0.5s ease;
+}
+@media (max-width: 730px){
+    body{
+        background-color: #000000;
+    }
+}
+.contenedor_servicios{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    transition: all 0.5s ease;
+}.tarjeta{
+    background-color: #fff;
+    padding: 30px;
+    border: 2px solid #333;
+    width: 30%;
+    text-align: center;
+    font-size: 1.3rem;
+    transition: all 0.5s ease;
+}.tarjeta:hover{
+    color: #ff0000;
+    transform:translateY(-10px);
+    background-color: #000000;
+    border: #ccc;
+    border-radius: 20px;
+}
+@media (max-width:730px){
+    .contenedor_servicios{flex-direction: column;
+    padding: 20px;
+    }.tarjeta{
+        width: 85%;
+        background-color: #000;
+        border: 2px solid #ccc;
+    }.tarjeta:hover{
+        color: #00f;
+        background-color: #fff;
+        border: 2px solid #333;
+        transform: scale(1.1);
+    }
+}
+@keyframes deslizarYAparecer{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px) scale(1%) rotate(0deg);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(0px) rotate(360deg);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(50px) scale(10%);
+    }
+}
+.titulo_animado{
+    text-align: center;
+    color: #00f;
+        /*nombre animacion*/
+    animation: deslizarYAparecer 5s infinite;
+}
