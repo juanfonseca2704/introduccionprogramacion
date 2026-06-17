@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background:#354F42;
+    padding:20px;
+    text-align: center;
+}
+
+header{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+main{
+    max-width:1000px;
+    margin:auto;
+    text-align: center;
+}
+
+section{
+    background-color:#395941;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:20px;
+}
+
+form{
+    display:grid;
+    gap:10px;
+
+}
+
+input,
+select{
+    padding:10px;
+    background-color: #A3B28B;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+    padding:5px;
+    text-align: center;
+    color: black;
+
+}input:hover{
+    background-color:#ffffff;
+
+}
+
+button{
+    cursor:pointer;
+    padding:10px;
+    background-color: #A3B28B;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.8s ease;
+}button:hover{
+    background-color:#6338EE;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    border-radius: 20px;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+table th{
+    background:rgba(116, 167, 136, 0.867);
+    color:#EAF6AD;
+}
+
+.resumen{
+    text-align:center;
+}
+
+#totalInventario{
+    color:#B6DB00;
+    margin-top:10px;
+}
+.footer{
+    background-color: #6338EE;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+#importarArchivo{
+    background-color: #fff;
+    border: none;
+}
