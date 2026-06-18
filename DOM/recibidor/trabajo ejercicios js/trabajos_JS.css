@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    /*HEADER*/
+header{
+    background-color: antiquewhite;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra{
+    display: flex;
+}
