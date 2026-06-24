@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat bot</title>
+    <!--ESTILO-->
+        <link rel="stylesheet" href="/css/estilo.css">
+    <!--TIPOGRAFIA-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="/assets/logo.png" alt="logo">
+            <nav>
+                    <a href="/html/nosotros.html" >A cerca de nosotros</a>
+                    <a href="/html/productos.html" >Nuestros productos</a>
+                    <a href="/html/chat_bot.html">Ayuda al cliente</a>
+                    <button id="btn-darkmode">🌙</button>
+            </nav>
+
+        </div>
+    </header>
+
+
+
+
+    <section>
+        <div class="recibidor">
+            <div class="mini_recibidor">
+                <h1>¿CUENTANOS TU INCONVENIENTE?</h1>
+                </div>
+        </div>
+    </section>
+
+    <!-- INICIO -->
+    <div id="inicio" class="pantalla">
+        <button onclick="mostrar('productos')">
+            Problemas con nuestros productos
+        </button>
+
+        <button onclick="mostrar('empresa')">
+            Sobre nuestra empresa
+        </button>
+
+        <button onclick="mostrar('otro')">
+            Otro
+        </button>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div id="productos" class="pantalla" style="display:none;">
+        <h2>Problemas con nuestros productos</h2>
+
+        <button onclick="mostrar('pedido')">
+            El producto no ha llegado
+        </button>
+
+        <button onclick="mostrar('pedido')">
+            El producto ha llegado en mal estado
+        </button>
+
+        <button onclick="mostrar('pedido')">
+            Ha llegado algo que no había pedido
+        </button>
+
+        <br><br>
+
+        <button onclick="mostrar('inicio')">
+            Volver
+        </button>
+    </div>
+
+    <!-- PEDIDO -->
+    <div id="pedido" class="pantalla" style="display:none;">
+        <h2>Por favor digita tu número de pedido</h2>
+
+        <input type="text" id="pedidoNumero" placeholder="Número de pedido">
+
+        <br><br>
+
+        <button onclick="enviarPedido()">
+            Enviar
+        </button>
+
+        <button onclick="mostrar('inicio')">
+            Inicio
+        </button>
+    </div>
+
+    <!-- EMPRESA -->
+    <div id="empresa" class="pantalla" style="display:none;">
+        <h2>Sobre nuestra empresa</h2>
+
+        <button onclick="mostrar('ubicacion')">
+            Dónde nos puedes encontrar
+        </button>
+
+        <button onclick="mostrar('encuesta')">
+            Encuesta de satisfacción
+        </button>
+
+        <button onclick="mostrar('trabajo')">
+            Deseas trabajar con nosotros
+        </button>
+
+        <button onclick="mostrar('falla')">
+            Reportar una falla en nuestra página web
+        </button>
+
+        <br><br>
+
+        <button onclick="mostrar('inicio')">
+            Volver
+        </button>
+    </div>
+
+    <!-- UBICACION -->
+    <div id="ubicacion" class="pantalla" style="display:none;">
+        <h2>¿Dónde nos puedes encontrar?</h2>
+
+        <div>
+            <ul>
+                <li>
+                    <img src="" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <button onclick="mostrar('empresa')">
+            Volver
+        </button>
+    </div>
+
+    <!-- ENCUESTA -->
+    <div id="encuesta" class="pantalla" style="display:none;">
+        <h2>Encuesta de satisfacción</h2>
+
+        <p>Califica nuestro servicio:</p>
+
+        <button onclick="calificar(1)">1</button>
+        <button onclick="calificar(2)">2</button>
+        <button onclick="calificar(3)">3</button>
+        <button onclick="calificar(4)">4</button>
+        <button onclick="calificar(5)">5</button>
+
+        <br><br>
+
+        <button onclick="mostrar('empresa')">
+            Volver
+        </button>
+    </div>
+
+    <!-- TRABAJO -->
+    <div id="trabajo" class="pantalla" style="display:none;">
+        <h2>¿Deseas trabajar con nosotros?</h2>
+
+        <button>
+            Ver vacantes
+        </button>
+
+        <br><br>
+
+        <button onclick="mostrar('empresa')">
+            Volver
+        </button>
+    </div>
+
+    <!-- FALLA WEB -->
+    <div id="falla" class="pantalla" style="display:none;">
+        <h2>Por favor ingresa el error</h2>
+
+        <textarea id="errorWeb" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <button onclick="enviarReporte()">
+            Enviar reporte
+        </button>
+
+        <button onclick="mostrar('empresa')">
+            Volver
+        </button>
+    </div>
+
+    <!-- OTRO -->
+    <div id="otro" class="pantalla" style="display:none;">
+        <h2>¿Desea hablar con un asesor?</h2>
+
+        <button onclick="mostrar('asesor')">
+            Sí
+        </button>
+
+        <button onclick="mostrar('inicio')">
+            No
+        </button>
+    </div>
+
+    <!-- ASESOR -->
+    <div id="asesor" class="pantalla" style="display:none;">
+        <h2>Contacto con asesor</h2>
+
+        <button>
+            <a href="tel:+573144126713">Oprime aqui</a>
+        </button>
+
+        <br><br>
+
+        <button onclick="mostrar('inicio')">
+            Inicio
+        </button>
+    </div>
+
+
+    <footer>
+    <div class="footer">
+            <nav class="foot">
+                    <a href="https://www.tiktok.com/"><img src="/assets/tik_tok.png" alt="tik_tok" class="icono"></a>
+                    <a href="https://www.whatsapp.com/"><img src="/assets/whatsapp.png" alt="whatsapp" class="icono"></a>
+                    <a href="https://www.instagram.com/" ><img src="/assets/instagram.png" alt="imstagran" class="icono"></a>
+            </nav>
+        </div>
+</footer>
+
+    <script src="/js/chat_bot.js"></script>
+    <script src="/js/dark_mode.js"></script>
+</body>
+</html>

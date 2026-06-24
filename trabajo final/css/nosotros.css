@@ -1,0 +1,219 @@
+/* =========================
+        DARK MODE
+========================= */
+:root{
+    --fondo: #000;
+    --texto: #F1E1C7;
+    --Resalto: #00504f;
+    --Resalto_1: #ff6600;
+    --complementario: #161614;
+}
+
+body.dark-mode{
+    --fondo:#fff;
+    --texto:#0e1e38;
+    --Resalto:#ffafb0;
+    --Resalto_1:#0099ff;
+    --complementario:#e9e9eb;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Chelsea Market", system-ui;
+}
+
+body{
+    background-color:var(--fondo);
+    min-height:100vh;
+}
+
+/* =========================
+          HEADER
+========================= */
+
+header{
+    min-height:100px;
+    background-color:var(--Resalto);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:0 20px;
+}
+
+.header{
+    width:100%;
+    max-width:1200px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:var(--complementario);
+    font-size:20px;
+    text-decoration:none;
+    transition:all .3s ease;
+}
+
+nav a:hover{
+    transform:translateY(-5px) scale(1.1);
+    color:var(--Resalto_1);
+}
+
+.logo{
+    width:80px;
+    height:auto;
+}
+
+#btn-darkmode{
+    background:transparent;
+    border:none;
+    font-size:25px;
+    cursor:pointer;
+    transition:transform .3s ease;
+}
+
+#btn-darkmode:hover{
+    transform:scale(1.3);
+}
+
+/* =========================
+          FOOTER
+========================= */
+
+footer{
+    min-height:100px;
+    background-color:var(--Resalto);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:0 20px;
+}
+
+.footer{
+    width:100%;
+    max-width:1200px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.foot{
+    transition:all .3s ease;
+}
+
+.foot:hover{
+    transform:translateY(-5px) scale(1.1);
+}
+
+.icono{
+    width:40px;
+    height:auto;
+}
+
+/* =========================
+          TARJETAS
+========================= */
+
+.seccion-completa{
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.contenedor-horizontal{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:25px;
+}
+
+.card{
+    background-color:var(--complementario);
+    color:var(--texto);
+
+    padding:30px;
+
+    border:2px solid var(--Resalto);
+    border-radius:20px;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.25);
+    transition:all .3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+}
+
+.card h2{
+    color:var(--Resalto_1);
+    margin-bottom:15px;
+}
+
+.card p{
+    color:var(--texto);
+    line-height:1.7;
+}
+
+/* =========================
+      VERSION MOVIL
+========================= */
+
+@media (max-width:768px){
+
+    .header{
+        flex-direction:column;
+        gap:15px;
+        padding:15px 0;
+    }
+
+    nav{
+        justify-content:center;
+        gap:15px;
+    }
+
+    nav a{
+        font-size:16px;
+    }
+
+    /* Las tarjetas pasan de 2 columnas a 1 */
+    .contenedor-horizontal{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .card h2{
+        font-size:22px;
+    }
+
+    .card p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    /* Mantiene los logos en los extremos */
+    .footer{
+        justify-content:space-between;
+    }
+
+    .icono{
+        width:35px;
+    }
+}

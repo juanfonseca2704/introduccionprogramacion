@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos</title>
+    <!--ESTILO-->
+        <link rel="stylesheet" href="/css/productos.css">
+    <!--TIPOGRAFIA-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="/assets/logo.png" alt="logo">
+            <nav>
+                    <a href="/html/nosotros.html" >A cerca de nosotros</a>
+                    <a href="/html/productos.html" >Nuestros productos</a>
+                    <a href="/html/chat_bot.html">Ayuda al cliente</a>
+                    <button id="btn-darkmode">🌙</button>
+            </nav>
+
+        </div>
+    </header>
+
+
+
+        <button class="cart-toggle-btn" id="open-cart-btn">
+        Carrito <span class="cart-count" id="cart-count-badge">0</span>
+    </button>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Tus Drops</h2>
+            <button class="close-cart" id="close-cart-btn">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="cart-total-price" id="cart-total-price">$0</span>
+            </div>
+            <button class="checkout-btn">Finalizar compra</button>
+        </div>
+    </div>
+
+    <h1>Drops / Ofertas Urbanas</h1>
+
+    <div class="products-grid">
+        <!--Sacos-->
+
+        <div class="card">
+            <img src="/assets/ropa/saco_blanco_0.png" alt="saco_blanco_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">Buso Blanco sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_amarillo_0.png" alt="saco_amarillo_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco amarillo sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_azul_0.png" alt="saco_azul_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco azul sin estmpado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_gris_0.png" alt="saco_gris_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco gris sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_morado_0.png" alt="saco_morado_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco morado sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_verde_0.png" alt="saco_verde_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">sacoverde sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_rojo_0.png" alt="saco_rojo_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco rojo sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+<!--sacos estampadaos-->
+
+        <div class="card">
+            <img src="/assets/ropa/saco_blanco_1.png" alt="saco_blanco_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco Blanco  con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_amarillo_1.png" alt="saco_amarillo_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco amarillo con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_azul_1.png" alt="saco_azul_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco azul con estmpado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_gris_1.png" alt="saco_gris_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco gris con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_morado_1.png" alt="saco_morado_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco morado con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_verde_1.png" alt="saco_verde_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">sacoverde con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/saco_rojo_1.png" alt="saco_rojo_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco rojo con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+<!--CAMISAS-->
+        <div class="card">
+            <img src="/assets/ropa/camisa_blanco_0.png" alt="camisa_blanco_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisablanco sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_amarilla_0.png" alt="camisa_amarilla_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa amarilla sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_azul_0.png" alt="camisa_azul_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa azul sin estmpado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_gris_0.png" alt="camisa_gris_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa gris sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_morado_0.png" alt="camisa_morado_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa morado sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_verde_0.png" alt="camisa_verde_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa verde sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_roja_0.png" alt="camisa_rojo_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa rojo sin estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+<!--camisas estampadaos-->
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_blanco_1.png" alt="camisa_blanco_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa Blanco  con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_amarilla_1.png" alt="camisa_amarillo_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa amarillo con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_azul_1.png" alt="camisa_azul_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa azul con estmpado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_gris_1.png" alt="camisa_gris_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">saco gris con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_morado_1.png" alt="camisa_morado_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa morado con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/camisa_verde_1.png" alt="camisa_verde_1" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">camisa verde con estampado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+
+<!--Pantalones-->
+
+
+        <div class="card">
+            <img src="/assets/ropa/pantalon_blanco.png" alt="pantalon_blanco" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">pantalon blanco</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/pantalon_amarillo.png" alt="pantalon_amarillo" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">pantalon amarillo</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/pantalon_azul.png" alt="pantalon_azul" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">pantalon azul</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/pantalon_gris_0.png" alt="pantalon_gris_0" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">pantalon gris</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/pantalon_morado.png" alt="pantalon_morado" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">pantalon morado</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/pantalon_verde.png" alt="pantalon_verde" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">pantalon verde</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/assets/ropa/pantalon_rojo.png" alt="pantalon_rojo" class="card-image">
+            <div class="card-info">
+                <h2 class="card-title">pantalon rojo</h2>
+                <div class="card-price">$45.000</div>
+                <button class="card-btn">compra ahora</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+<footer>
+    <div class="footer">
+            <nav class="foot">
+                    <a href="https://www.tiktok.com/"><img src="/assets/tik_tok.png" alt="tik_tok" class="icono"></a>
+                    <a href="https://www.whatsapp.com/"><img src="/assets/whatsapp.png" alt="whatsapp" class="icono"></a>
+                    <a href="https://www.instagram.com/" ><img src="/assets/instagram.png" alt="imstagran" class="icono"></a>
+            </nav>
+        </div>
+</footer>
+
+    <script src="/js/dark_mode.js"></script>
+    <script src="/js/productos.js"></script>
+</body>
+</html>
